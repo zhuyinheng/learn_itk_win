@@ -1,0 +1,23 @@
+{
+    "version": 3,
+    "configurePresets": [
+        {
+            "name": "win-msvc-ninja",
+            "displayName": "Windows MSVC + Ninja",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build",
+            "cacheVariables": {
+                "CMAKE_C_COMPILER": "cl",
+                "CMAKE_CXX_COMPILER": "cl"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "debug",
+            "description": "",
+            "displayName": "",
+            "configurePreset": "win-msvc-ninja"
+        }
+    ]
+}
